@@ -1,0 +1,64 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+.górnyl{
+background-color: rgb(197, 85, 160);
+text-align: center;
+width: 50%;
+height: 180px;
+float: left;
+}
+.górnyp{
+background-color: rgb(197, 85, 160);
+text-align: center;
+width: 50%;
+height: 180px;
+float: left;
+}
+.baner{
+background-color: rgb(246, 226, 222);
+text-align: center;
+height: 100px;
+padding: 10px;
+float: left;
+width: 100%;
+}
+.prawy{
+background-color: rgb(197, 85, 160);
+color: white;
+width: 50%;
+height: 400px;
+float: left;
+}
+.lewy{
+background-color: rgb(197, 85, 160);
+color: white;
+width: 50%;
+height: 400px;
+float: left;
+}
+.stopka{
+background-color: rgb(246, 226, 222);
+text-align: center;
+height: 100px;
+padding: 10px;
+float: left;
+width: 100%;
+}
+.górnyp a{
+background-image: url('cukierki1.png');
+padding-right: 70px;
+padding-bottom: 120px;
+font-size: 150%;
+text-decoration: none;
+}
+table, th, td{
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 10px;
+}
+h2{
+    letter-spacing: 10px;
+    font-size: 200%;
+}

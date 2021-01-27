@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fabryka żelków</title>
+        <link rel="stylesheet" href="styl9.css">
+        <script>
+            function skrypt() {
+                mis = document.getElementById('number').value;
+                zamien = document.getElementById('Zamien');
+                R = document.getElementById('R').value;
+                G = document.getElementById('G').value;
+                B = document.getElementById('B').value;
+                kolor = document.getElementById('przycisk2');
+                switch(mis){
+                    case '1':
+                        zamien.innerHTML = 'Zamówiłeś żelka: miś';
+                        break;
+                    case '2':
+                        zamien.innerHTML = 'Zamówiłeś żelka: żabka';
+                        break;
+                    case '3': 
+                        zamien.innerHTML = 'Zamówiłeś żelka: serce';
+                        break;
+                    default:
+                        zamien.innerHTML = 'Zamówiłeś żelka: inny kształt';
+                        break;
+                }
+                kolor.style.backgroundColor = 'rgb('+ R + ',' + G + ',' + B +' )'
+            }
+        </script>
+    </head>
+    <body>
+        <div class="górnyl">
+            <a href="index.html"><img src="logo.png" alt="logo fabryki"></a>
+        </div>
+        <div class="górnyp">
+            <a href="zamowienie.html">Zamówienie</a>
+        </div>
+        <div class="baner"><h2>Zamów nasz produkt</h2></div>
+        <div class="lewy">
+            <h1>Oferta</h1>
+            <table>
+                <tr>
+                    <th>Kształty</th>
+                    <th>Kolory</th>
+                </tr>
+                <tr>
+                    <td><ol>
+                        <li>miś</li>
+                        <li>żabka</li>
+                        <li>serce</li>
+                    </ol>
+                </td>
+                    <td>
+                        <ol>
+                            <li>czerwony</li>
+                            <li>niebieski</li>
+                            <li>żółty</li>
+                            <li>inny</li>
+                    </ol>
+                </td>
+                </tr>
+            </table>
+        </div>
+        <div class="prawy">
+            <p>Podaj numer kształtu</p>
+            <form>
+                <input type="number" id="number" name="number">
+            </form>
+            <p>Skomponuj swój kolor, podaj RGB:</p>
+            <form>
+                R: <input type="number" id="R" name="R">
+                G: <input type="number" id="G" name="G">
+                B: <input type="number" id="B" name="B">
+            </form>
+            <button type="button" id="przycisk1" onclick="skrypt()">Zamów</button>
+            <p id="Zamien">Wybrany kształt</p>
+            <button type="button" id="przycisk2">Wybrany kolor</button>
+        </div>
+        <div class="stopka">Autor strony: <i>Maciej Walkowicz</i></div>
+    </body>
+</html>
